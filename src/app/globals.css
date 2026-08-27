@@ -3,24 +3,40 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --nab-navy-1: #001426;
+  --nab-navy-2: #001b36;
+  --nab-cream: #f5f5d9;
+  --nab-black: #000000;
+  --nab-gray-text: #212529;
+  --nab-bordo-1: #4c0d01;
+  --nab-bordo-2: #a31b01;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-nab-navy-1: var(--nab-navy-1);
+  --color-nab-navy-2: var(--nab-navy-2);
+  --color-nab-cream: var(--nab-cream);
+  --color-nab-bordo-1: var(--nab-bordo-1);
+  --color-nab-bordo-2: var(--nab-bordo-2);
+  --font-poppins: var(--font-poppins);
+  --font-montserrat: var(--font-montserrat);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
+
+.section-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes accordion-down {
+  from { height: 0; opacity: 0; }
+  to { height: var(--radix-accordion-content-height, auto); opacity: 1; }
 }

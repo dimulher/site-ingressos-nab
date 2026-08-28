@@ -15,7 +15,7 @@ export function DifficultySection() {
           alt="Quero me inscrever"
           width={430}
           height={105}
-          className="mx-auto h-auto w-[220px] drop-shadow-xl transition hover:scale-105 sm:w-[280px]"
+          className="mx-auto h-auto w-[270px] drop-shadow-xl transition hover:scale-105 sm:w-[320px]"
         />
       </a>
 

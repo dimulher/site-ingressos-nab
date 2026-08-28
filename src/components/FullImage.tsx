@@ -1,15 +1,9 @@
-import Image from "next/image";
-
 export function FullImage() {
   return (
-    <section className="w-full">
-      <Image
-        src="/images/full-image-bg.png"
-        alt="Novos Autores do Brasil"
-        width={1600}
-        height={700}
-        className="h-auto w-full object-cover"
-      />
-    </section>
+    <section
+      className="section-bg h-[220px] w-full overflow-hidden bg-[var(--nab-navy-1)] sm:h-[260px]"
+      style={{ backgroundImage: "url(/images/full-image-bg.png)" }}
+      aria-label="Kit do evento Novos Autores do Brasil"
+    />
   );
 }

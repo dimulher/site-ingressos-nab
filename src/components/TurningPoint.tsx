@@ -71,6 +71,30 @@ export function TurningPoint() {
         <h2 className="mt-16 font-poppins text-2xl sm:text-3xl">
           <strong className="font-semibold">HOTÉIS</strong> NA REGIÃO
         </h2>
+
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
+          <Image
+            src="/images/hotels/hotel-1.png"
+            alt="San Raphael Hotel — Largo do Arouche, 150, São Paulo - SP"
+            width={269}
+            height={575}
+            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px]"
+          />
+          <Image
+            src="/images/hotels/hotel-2.png"
+            alt="Holiday Inn São Paulo Parque Anhembi — Rua Professor Milton Rodriguez, 100"
+            width={269}
+            height={575}
+            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px]"
+          />
+          <Image
+            src="/images/hotels/hotel-3.png"
+            alt="Gran Villagio Hotel SP — Rua Martins Fontes, 330, São Paulo - SP"
+            width={269}
+            height={575}
+            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px]"
+          />
+        </div>
       </div>
     </section>
   );

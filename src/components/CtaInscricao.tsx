@@ -22,12 +22,12 @@ export function CtaInscricao() {
       className="section-bg w-full bg-[var(--nab-navy-1)] py-16 text-white"
       style={{ backgroundImage: "url(/images/cta-inscricao-bg.png)" }}
     >
-      <div className="mx-auto max-w-4xl px-6">
-        <h2 className="text-center font-poppins text-xl font-semibold tracking-wide sm:text-3xl">
+      <div className="mx-auto max-w-4xl px-6 lg:max-w-5xl xl:max-w-6xl">
+        <h2 className="text-center font-poppins text-xl font-semibold tracking-wide sm:text-3xl lg:text-4xl">
           GARANTA SUA VAGA AGORA MESMO!
         </h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-12">
           {/* Básico */}
           <div className="overflow-hidden rounded-lg bg-[var(--nab-cream)] text-[var(--nab-navy-2)] shadow-xl">
             <div className="flex items-center justify-between bg-gradient-to-b from-red-700 to-red-900 px-6 py-5 text-white">

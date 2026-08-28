@@ -4,28 +4,28 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const sponsors = [
-  { src: "/images/sponsors/rubi-mariana-soares-santos.png", name: "Mariana Soares Santos" },
-  { src: "/images/sponsors/rubi-maria-divina.png", name: "Maria Divina" },
-  { src: "/images/sponsors/rubi-alessiandra-daria-3.png", name: "Alessiandra Dária" },
-  { src: "/images/sponsors/rubi-alessiandra-daria-2.png", name: "Alessiandra Dária" },
-  { src: "/images/sponsors/rubi-alessiandra-daria-1.png", name: "Alessiandra Dária" },
+const coordinators = [
+  { src: "/images/coordenadores/matheus-santos-card.png", name: "Matheus Santos" },
+  { src: "/images/coordenadores/alice-correa-card.png", name: "Alice Corrêa" },
+  { src: "/images/coordenadores/ariane-alves-card.png", name: "Ariane Alves" },
+  { src: "/images/coordenadores/raquel-marques-card.png", name: "Raquel Marques" },
+  { src: "/images/coordenadores/fran-backer-card.png", name: "Fran Backer" },
 ];
 
 const AUTOPLAY_MS = 4000;
 
-export function Sponsors() {
+export function CoordinatorsSection() {
   const [index, setIndex] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const goTo = useCallback((next: number) => {
-    setIndex(((next % sponsors.length) + sponsors.length) % sponsors.length);
+    setIndex(((next % coordinators.length) + coordinators.length) % coordinators.length);
   }, []);
 
   const startAutoplay = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setIndex((i) => (i + 1) % sponsors.length);
+      setIndex((i) => (i + 1) % coordinators.length);
     }, AUTOPLAY_MS);
   }, []);
 
@@ -42,20 +42,16 @@ export function Sponsors() {
   };
 
   return (
-    <section className="w-full bg-[var(--nab-navy-2)] py-16 text-center">
+    <section className="w-full bg-[var(--nab-navy-1)] pb-16 text-center">
       <div className="mx-auto max-w-xs px-6 lg:max-w-sm xl:max-w-md">
-        <h2 className="font-poppins text-xl font-semibold tracking-wide text-sky-400 sm:text-2xl">
-          PATROCINADORES
-        </h2>
-
-        <div className="relative mt-8">
+        <div className="relative mt-2">
           <div className="overflow-hidden rounded-lg shadow-2xl">
             <Image
-              key={sponsors[index].src}
-              src={sponsors[index].src}
-              alt={`Patrocinador Rubi — ${sponsors[index].name}`}
-              width={560}
-              height={700}
+              key={coordinators[index].src}
+              src={coordinators[index].src}
+              alt={`Coordenador — ${coordinators[index].name}`}
+              width={711}
+              height={1069}
               className="h-auto w-full"
               priority
             />
@@ -63,7 +59,7 @@ export function Sponsors() {
 
           <button
             type="button"
-            aria-label="Patrocinador anterior"
+            aria-label="Coordenador anterior"
             onClick={() => handleNav(index - 1)}
             className="absolute left-0 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/40 text-white transition hover:bg-black/60"
           >
@@ -71,7 +67,7 @@ export function Sponsors() {
           </button>
           <button
             type="button"
-            aria-label="Próximo patrocinador"
+            aria-label="Próximo coordenador"
             onClick={() => handleNav(index + 1)}
             className="absolute right-0 top-1/2 flex h-9 w-9 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full border border-white/30 bg-black/40 text-white transition hover:bg-black/60"
           >
@@ -80,11 +76,11 @@ export function Sponsors() {
         </div>
 
         <div className="mt-5 flex justify-center gap-2">
-          {sponsors.map((sponsor, i) => (
+          {coordinators.map((c, i) => (
             <button
-              key={sponsor.src}
+              key={c.src}
               type="button"
-              aria-label={`Ir para patrocinador ${i + 1}`}
+              aria-label={`Ir para coordenador ${i + 1}`}
               onClick={() => handleNav(i)}
               className={`h-2 w-2 rounded-full transition ${
                 i === index ? "bg-sky-400" : "bg-white/30"

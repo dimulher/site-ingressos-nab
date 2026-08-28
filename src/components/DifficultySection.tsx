@@ -19,12 +19,12 @@ export function DifficultySection() {
         />
       </a>
 
-      <div className="mx-auto max-w-3xl px-6">
-        <h1 className="mt-6 font-poppins text-3xl sm:text-4xl">
+      <div className="mx-auto max-w-3xl px-6 lg:max-w-4xl xl:max-w-5xl">
+        <h1 className="mt-6 font-poppins text-3xl sm:text-4xl lg:text-5xl">
           se você tem <strong className="font-semibold">dificuldade</strong> de...
         </h1>
 
-        <div className="mt-10 flex flex-wrap items-stretch justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-stretch justify-center gap-4 lg:gap-6">
           {badgesRow1.map((src) => (
             <Image
               key={src}
@@ -32,11 +32,11 @@ export function DifficultySection() {
               alt=""
               width={300}
               height={99}
-              className="h-auto w-[190px] sm:w-[230px]"
+              className="h-auto w-[190px] sm:w-[230px] lg:w-[260px]"
             />
           ))}
         </div>
-        <div className="mt-4 flex flex-wrap items-stretch justify-center gap-4">
+        <div className="mt-4 flex flex-wrap items-stretch justify-center gap-4 lg:gap-6">
           {badgesRow2.map((src) => (
             <Image
               key={src}
@@ -44,12 +44,12 @@ export function DifficultySection() {
               alt=""
               width={300}
               height={100}
-              className="h-auto w-[190px] sm:w-[230px]"
+              className="h-auto w-[190px] sm:w-[230px] lg:w-[260px]"
             />
           ))}
         </div>
 
-        <p className="mt-10 font-montserrat text-lg leading-relaxed sm:text-xl">
+        <p className="mt-10 font-montserrat text-lg leading-relaxed sm:text-xl lg:text-2xl lg:leading-relaxed">
           Participe para alcançar seu próximo nível! Grandes empresários reunidos para{" "}
           <strong className="font-semibold">
             promover autoridade e gerar networking

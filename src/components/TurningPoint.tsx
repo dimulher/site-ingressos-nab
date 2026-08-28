@@ -7,13 +7,13 @@ export function TurningPoint() {
       className="section-bg w-full bg-[var(--nab-navy-1)] py-16 text-white"
       style={{ backgroundImage: "url(/images/cta-3block-bg.png)" }}
     >
-      <div className="mx-auto max-w-4xl px-6 text-center">
-        <h2 className="font-poppins text-2xl sm:text-3xl">
+      <div className="mx-auto max-w-4xl px-6 text-center lg:max-w-5xl xl:max-w-6xl">
+        <h2 className="font-poppins text-2xl sm:text-3xl lg:text-4xl">
           AQUI É O SEU <strong className="font-semibold">PONTO DE VIRADA!</strong>
         </h2>
 
         <div className="mt-10 grid grid-cols-1 overflow-hidden rounded-lg bg-[var(--nab-navy-2)] text-left shadow-xl sm:grid-cols-2">
-          <div className="flex flex-col gap-6 p-8">
+          <div className="flex flex-col gap-6 p-8 lg:p-10">
             <h3 className="font-poppins text-xl sm:text-2xl">
               HORA DE <strong className="font-semibold">AVANÇAR!</strong>
             </h3>
@@ -68,31 +68,31 @@ export function TurningPoint() {
           </div>
         </div>
 
-        <h2 className="mt-16 font-poppins text-2xl sm:text-3xl">
+        <h2 className="mt-16 font-poppins text-2xl sm:text-3xl lg:text-4xl">
           <strong className="font-semibold">HOTÉIS</strong> NA REGIÃO
         </h2>
 
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3 lg:max-w-4xl lg:gap-8">
           <Image
             src="/images/hotels/hotel-1.png"
             alt="San Raphael Hotel — Largo do Arouche, 150, São Paulo - SP"
             width={269}
             height={575}
-            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px]"
+            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px] lg:max-w-[260px]"
           />
           <Image
             src="/images/hotels/hotel-2.png"
             alt="Holiday Inn São Paulo Parque Anhembi — Rua Professor Milton Rodriguez, 100"
             width={269}
             height={575}
-            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px]"
+            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px] lg:max-w-[260px]"
           />
           <Image
             src="/images/hotels/hotel-3.png"
             alt="Gran Villagio Hotel SP — Rua Martins Fontes, 330, São Paulo - SP"
             width={269}
             height={575}
-            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px]"
+            className="mx-auto block h-auto w-full max-w-[180px] sm:max-w-[240px] lg:max-w-[260px]"
           />
         </div>
       </div>

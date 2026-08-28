@@ -26,8 +26,8 @@ export function Faq() {
 
   return (
     <section className="w-full bg-white py-20">
-      <div className="mx-auto max-w-3xl px-6">
-        <h2 className="text-center font-poppins text-xl font-semibold tracking-wide text-[var(--nab-navy-2)] sm:text-2xl">
+      <div className="mx-auto max-w-3xl px-6 lg:max-w-4xl">
+        <h2 className="text-center font-poppins text-xl font-semibold tracking-wide text-[var(--nab-navy-2)] sm:text-2xl lg:text-3xl">
           SAC - PERGUNTAS FREQUENTES
         </h2>
 

@@ -56,7 +56,9 @@ export function CtaInscricao() {
               </ul>
 
               <a
-                href="#inscricao"
+                href="https://chk.eduzz.com/Q9N2V24D01"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-6 block rounded bg-gradient-to-b from-red-700 to-red-900 py-3 text-center font-poppins font-bold uppercase text-white transition hover:brightness-110"
               >
                 Quero o ingresso básico!
@@ -105,7 +107,9 @@ export function CtaInscricao() {
               </ul>
 
               <a
-                href="#inscricao"
+                href="https://chk.eduzz.com/E05NOZB49X"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-6 block rounded bg-gradient-to-b from-green-500 to-green-700 py-3 text-center font-poppins font-bold uppercase text-white transition hover:brightness-110"
               >
                 Quero o ingresso diamante!

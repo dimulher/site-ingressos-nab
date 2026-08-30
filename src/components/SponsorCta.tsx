@@ -3,6 +3,7 @@ import Image from "next/image";
 export function SponsorCta() {
   return (
     <a
+      id="patrocinadores"
       href="https://novosautoresbrasil.com.br/patrocinador-v5"
       target="_blank"
       rel="noopener noreferrer"

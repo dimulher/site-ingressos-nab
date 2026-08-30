@@ -7,7 +7,7 @@ export function DifficultySection() {
   return (
     <section className="relative w-full bg-[var(--nab-cream)] pt-10 pb-14 text-center text-[var(--nab-navy-2)] sm:pt-12">
       <a
-        href="#inscricao"
+        href="#patrocinadores"
         className="absolute left-1/2 top-0 z-10 inline-block -translate-x-1/2 -translate-y-1/2"
       >
         <Image

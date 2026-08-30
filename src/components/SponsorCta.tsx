@@ -3,7 +3,9 @@ import Image from "next/image";
 export function SponsorCta() {
   return (
     <a
-      href="#inscricao"
+      href="https://novosautoresbrasil.com.br/patrocinador-v5"
+      target="_blank"
+      rel="noopener noreferrer"
       className="flex w-full items-center justify-center gap-4 px-6 py-4 transition hover:brightness-110 sm:gap-6"
       style={{
         background:

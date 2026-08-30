@@ -32,7 +32,7 @@ export function DifficultySection() {
               alt=""
               width={300}
               height={99}
-              className="h-auto w-[190px] sm:w-[230px] lg:w-[260px]"
+              className="h-auto w-[280px] sm:w-[230px] lg:w-[260px]"
             />
           ))}
         </div>
@@ -44,7 +44,7 @@ export function DifficultySection() {
               alt=""
               width={300}
               height={100}
-              className="h-auto w-[190px] sm:w-[230px] lg:w-[260px]"
+              className="h-auto w-[280px] sm:w-[230px] lg:w-[260px]"
             />
           ))}
         </div>

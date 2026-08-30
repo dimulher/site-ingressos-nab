@@ -1,11 +1,7 @@
 export function Hero() {
   return (
     <section
-      className="section-bg relative w-full"
-      style={{
-        backgroundImage: "url(/images/hero-full-networking-v2.png)",
-        aspectRatio: "1672 / 941",
-      }}
+      className="section-bg relative w-full bg-[url('/images/hero-mobile-v4.png')] [aspect-ratio:1122/1402] sm:bg-[url('/images/hero-desktop-v2.png')] sm:[aspect-ratio:1672/941]"
       aria-label="Novos Autores do Brasil — Networking Empresarial em Alphaville"
     >
       <div

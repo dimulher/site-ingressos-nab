@@ -10,6 +10,7 @@ const sponsors = [
   { src: "/images/sponsors/rubi-alessiandra-daria-3.png", name: "Alessiandra Dária" },
   { src: "/images/sponsors/rubi-alessiandra-daria-2.png", name: "Alessiandra Dária" },
   { src: "/images/sponsors/rubi-alessiandra-daria-1.png", name: "Alessiandra Dária" },
+  { src: "/images/sponsors/rubi-gabriela-oliveira.png", name: "Gabriela Oliveira" },
 ];
 
 const AUTOPLAY_MS = 4000;
